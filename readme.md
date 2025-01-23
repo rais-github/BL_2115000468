@@ -34,3 +34,21 @@
 6. Java loops - for and while
 7. Java break and continue statement
 8. Java switch Statement
+
+### 23rd January
+
+- **What was taught**: Problems of 22nd were asked to complete and practice set for today was provided.
+- **What i Learned**: Understood the Arrays data structures , for both 1D and 2D.
+
+[Topic]
+
+1. Java Arrays
+2. Create an Array
+3. Access an Array
+4. Accessing using for loop
+5. Modifying an Array
+6. Using length property of array
+7. Java Multi-demensional Array
+8. Java 2 Dimensional Array (Matrix)
+9. Accessing, finding size, etc of Multi-Dimensional Array
+10. Using Java System error() message and exit() method
