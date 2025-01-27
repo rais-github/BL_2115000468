@@ -52,3 +52,18 @@
 8. Java 2 Dimensional Array (Matrix)
 9. Accessing, finding size, etc of Multi-Dimensional Array
 10. Using Java System error() message and exit() method
+
+### 27th January
+
+- **What was taught**: Assignment over the below mentioned topics was provided.
+- **What i Learned**: Recursion,methods,static imports , multiple method invocation.
+
+[Topic]
+
+1. User Defined Methods
+2. Using Methods Multiple Times
+3. Making Methods more Dynamic
+4. Recursive Methods
+5. Java Static Methods
+6. Java Standard Library Methods
+7. java.lang.Math class
