@@ -67,3 +67,24 @@
 5. Java Static Methods
 6. Java Standard Library Methods
 7. java.lang.Math class
+
+### 27th January
+
+- **What was taught**: Concept of string was introduced from basic to utilites.
+- **What i Learned**: Practised on level of problems on the former topic.
+
+[Topic]
+
+1. Java Strings
+2. Create Strings
+3. Use of "\" Escape Sequence
+4. Take String Input
+5. String Arrays
+6. String as Method Parameters
+7. String Class Built-In Methods
+8. ASCII Character Codes
+9. Java Exceptions
+10. Java Exception Hierarchy
+11. Java Exception Types
+12. java.lang.RuntimeException or Unchecked Exceptions
+13. Checked Exceptions
