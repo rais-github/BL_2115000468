@@ -88,3 +88,13 @@
 11. Java Exception Types
 12. java.lang.RuntimeException or Unchecked Exceptions
 13. Checked Exceptions
+
+### 30th January
+
+- **What was taught**: OOPS concept was breifly described about the class and object relation.
+- **What i Learned**: Three problems for creating class and object were provided.
+
+[Topic]
+
+1. Procedural vs Object-oriented Programming Language
+2. Class and Object
