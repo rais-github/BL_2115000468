@@ -98,3 +98,14 @@
 
 1. Procedural vs Object-oriented Programming Language
 2. Class and Object
+
+### 31th January
+
+- **What was taught**: Comparison between Default and patrametrised constructor and about sub classes accessing differnt members of super.
+- **What i Learned**: The problems for creating class and object were provided for practise.
+
+[Topic]
+
+- Java Constructors
+- Instance vs. Class Variables
+- Access Modifiers Level 1
