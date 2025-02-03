@@ -68,7 +68,7 @@
 6. Java Standard Library Methods
 7. java.lang.Math class
 
-### 27th January
+### 28th January
 
 - **What was taught**: Concept of string was introduced from basic to utilites.
 - **What i Learned**: Practised on level of problems on the former topic.
@@ -109,3 +109,15 @@
 - Java Constructors
 - Instance vs. Class Variables
 - Access Modifiers Level 1
+
+### 03rd February
+
+- **What was taught**: OOPs concept like static and final.
+- **What i Learned**: practised 7 questions to enhance my skills.
+
+[Topic]
+
+- this
+- static
+- final
+- instanceof operator
