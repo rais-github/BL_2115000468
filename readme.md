@@ -121,3 +121,17 @@
 - static
 - final
 - instanceof operator
+
+### 04th February
+
+- **What was taught**: Object Oriented Analysis and Design
+- **What i Learned**: Diagrams and Relationship
+
+[Topic]
+
+Object Oriented Design Principles
+
+- Class Diagram
+- Object Diagrams
+- Sequence Diagrams
+- Composition and Aggreation
