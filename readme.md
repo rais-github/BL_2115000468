@@ -135,3 +135,18 @@ Object Oriented Design Principles
 - Object Diagrams
 - Sequence Diagrams
 - Composition and Aggreation
+
+### 06th February
+
+- **What was taught**: Inheritance and its different types , also about interfaces.
+- **What i Learned**: Assignments over the taught material and guide to SOLID.
+
+[Topic]
+
+Object Oriented Design Principles
+
+- Inheritance
+- SINGLE INHERITANCE
+- MULTILEVEL INHERITANCE
+- MULTIPLE INHERITANCE
+- INTERFACES IMPLEMENT
