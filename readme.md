@@ -150,3 +150,15 @@ Object Oriented Design Principles
 - MULTILEVEL INHERITANCE
 - MULTIPLE INHERITANCE
 - INTERFACES IMPLEMENT
+
+### 08th February
+
+- **What was taught**: Encapsulation and polymorphism and glimpse on solid principles and interfaces
+- **What i Learned**: 8 questions were provided over the topic dealing with overrriding , inhertance ,interfaces.
+
+[Topic]
+
+- Encapsulation
+- Polymorphism
+- Interface
+- Abstract Classes
