@@ -162,3 +162,14 @@ Object Oriented Design Principles
 - Polymorphism
 - Interface
 - Abstract Classes
+
+### 10th February
+
+- **What was taught**: LinkedList documentation with examples
+- **What i Learned**: Differernt real world use cases of variert of linkedList tailored to system requirenments.
+
+[Topic]
+
+- Single Linked List
+- Double Linked List
+- Circular Linked List
