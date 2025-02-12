@@ -173,3 +173,14 @@ Object Oriented Design Principles
 - Single Linked List
 - Double Linked List
 - Circular Linked List
+
+### 12th February
+
+- **What was taught**: Queue , Stack and Hashing.
+- **What i Learned**: assignments over the topics along with each of their implementation.
+
+[Topic]
+
+- Stack
+- Queueu
+- Hashing
