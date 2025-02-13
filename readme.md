@@ -184,3 +184,18 @@ Object Oriented Design Principles
 - Stack
 - Queueu
 - Hashing
+
+### 13th February
+
+- **What was taught**: Sorting alogorithms in different cases.
+- **What i Learned**: Different problems over topic to like different quadratic , linear and recursive.
+
+[Topic]
+
+- Bubble
+- Insertion
+- Selection
+- Merge
+- Quick
+- Heap and heapitguhfo
+- Counting
