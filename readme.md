@@ -199,3 +199,17 @@ Object Oriented Design Principles
 - Quick
 - Heap and heapitguhfo
 - Counting
+
+### 14th February
+
+- **What was taught**: StringBuilder , StringBuffer alsong with file read and write operations plus also learned about the two searching algorithms.
+- **What i Learned**: Practised questions on the above topics.
+
+[Topic]
+
+StringBuilder
+StringBuffer
+FileReader,
+InputStreamReader
+Linear Search
+Binary Search,
