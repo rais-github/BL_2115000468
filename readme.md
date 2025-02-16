@@ -213,3 +213,12 @@ FileReader,
 InputStreamReader
 Linear Search
 Binary Search,
+
+### 15th February
+
+- **What was taught**: Different practises involved in big-Oh analysis.
+
+[Topic]
+
+- General Algorithm Best Practices
+- Time and space Complexity Optimization
