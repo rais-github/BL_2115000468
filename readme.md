@@ -222,3 +222,7 @@ Binary Search,
 
 - General Algorithm Best Practices
 - Time and space Complexity Optimization
+
+### 17th February
+
+- **What was taught**: Generics , Upper Bound and lower bound along with some guide to write better code and make it more usable.
