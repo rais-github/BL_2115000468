@@ -226,3 +226,7 @@ Binary Search,
 ### 17th February
 
 - **What was taught**: Generics , Upper Bound and lower bound along with some guide to write better code and make it more usable.
+
+### 18th February
+
+- **What was taught**: Collections -> List , Queue , Map
