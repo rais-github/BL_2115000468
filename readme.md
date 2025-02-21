@@ -230,3 +230,21 @@ Binary Search,
 ### 18th February
 
 - **What was taught**: Collections -> List , Queue , Map
+
+### 14th February
+
+- **What was taught**:Java streams and its types like byte stream and character stream
+- **What i Learned**: Practised questions on the above topics.
+
+[Topic]
+
+Java I/O Streams
+Types of Streams
+
+1. File Streams
+2. Object Streams
+3. ByteArray Streams
+4. Buffered Streams
+5. Reader and Writer
+6. Key Considerations
+7. Best Practices
