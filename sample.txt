@@ -1,0 +1,39 @@
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 1234567890
+
+Special characters: !@#$%^&*()_+-=[]{}|;':",.<>/?
+
+Multiline example:
+Line one
+Line two
+Indented line three
+Space-indented line four
+
+Random text: The quick brown fox jumps over the lazy dog.
+Unicode: हिन्दी 世界 こんにちは
+
+Numbers in sequence: 9876543210
+
+Repeating patterns: ABC ABC ABC 123 123 123  $$$
+Error
+JSON-like structure:
+{
+"name": "Alice",
+"age": 25,
+"city": "Wonderland"
+}
+error
+CSV-like structure:
+Name, Age, City
+Bob, 30, New York
+Charlie, 22, London
+David, 45, Tokyo
+
+Code snippet:
+public class HelloWorld {
+public static void main(String[] args) {
+System.out.println("Hello, World!");
+}
+}
+
+Binary-like data:
+1010101010101010 1100110011001100 1111000011110000
