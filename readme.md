@@ -231,7 +231,7 @@ Binary Search,
 
 - **What was taught**: Collections -> List , Queue , Map
 
-### 14th February
+### 19th February
 
 - **What was taught**:Java streams and its types like byte stream and character stream
 - **What i Learned**: Practised questions on the above topics.
@@ -248,3 +248,24 @@ Types of Streams
 5. Reader and Writer
 6. Key Considerations
 7. Best Practices
+
+### 20th February
+
+- **What was taught**:Exception handling and types
+- **What i Learned**: Practised questions on the below topics.
+
+[Topic]
+Exceptions
+Types of Exceptions
+Checked Exceptions,
+Unchecked Exceptions
+Custom Exceptions
+Handling Exceptions
+try-catch blocks
+try-catch-finally blocks
+try-with-resources statement
+throws clause
+throw statement
+Creating Custom Exceptions
+Extending Exception Class
+Defining Constructors
