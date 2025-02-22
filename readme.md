@@ -269,3 +269,26 @@ throw statement
 Creating Custom Exceptions
 Extending Exception Class
 Defining Constructors
+
+### 21st February
+
+[Topic]
+Regex
+MetaCharacter
+Quantifier
+
+Common Patterns:
+Email Validation
+Password Strength
+Phone Number Format
+Java Regex API
+Pattern
+Matcher
+Methods:
+find()
+matches()
+replaceAll()
+Introduction to JUnit Framework
+JUnit Annotations
+Writing Test Cases
+Structure of a Test Class
