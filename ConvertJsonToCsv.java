@@ -8,7 +8,7 @@ import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 
 
-        public class ConvertJsonToCsv {
+public class ConvertJsonToCsv {
             public static void main(String[] args) {
                 String jsonFilePath = "students.json";
                 String csvFilePath = "students.csv";
