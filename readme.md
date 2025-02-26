@@ -317,3 +317,12 @@ Reading CSV Files
 Writing CSV Files
 Parsing CSV Data
 Data Validation
+
+### 26th February
+
+[Topic]
+Introduction to JSON
+Reading JSON Data
+Writing JSON Data
+Parsing JSON Data
+JSON Schema Validation
