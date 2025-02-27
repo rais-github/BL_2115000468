@@ -326,3 +326,13 @@ Reading JSON Data
 Writing JSON Data
 Parsing JSON Data
 JSON Schema Validation
+
+### 27th February
+
+- **What was provided**:Material to look on Nginx and apache tomcat so that we can work with servlet and start server.
+
+[Topic]
+
+- Introduction to Servlet
+- About Tomcat
+- Details about Nginx
