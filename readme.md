@@ -336,3 +336,11 @@ JSON Schema Validation
 - Introduction to Servlet
 - About Tomcat
 - Details about Nginx
+
+### 17th March
+
+JS fundamental
+
+### 18th March
+
+js data structure
