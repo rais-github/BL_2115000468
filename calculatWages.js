@@ -80,23 +80,24 @@ let totalWageUsingReduce = wages.dailyWages.reduce(
 );
 console.log("Total Wage using reduce: $" + totalWageUsingReduce);
 
-let dailyWageWithDay = wages.dailyWages.map(
-  (wage, index) => `Day ${index + 1}: $${wage}`
-);
-console.log("Daily Wage with Day: ", dailyWageWithDay);
+let dailyWageWithDay = new Map();
+wages.dailyWages.forEach((wage, index) => {
+  dailyWageWithDay.set(`Day ${index + 1}`, wage);
+});
+console.log("Daily Wage with Day: ", Array.from(dailyWageWithDay.entries()));
 
-let fullTimeWageDays = wages.dailyWages
-  .map((wage, index) =>
-    wage === FULL_TIME_HOURS * WAGE_PER_HOUR ? `Day ${index + 1}` : null
-  )
-  .filter((day) => day !== null);
+let fullTimeWageDays = Array.from(dailyWageWithDay.entries())
+  .filter(([day, wage]) => wage === FULL_TIME_HOURS * WAGE_PER_HOUR)
+  .map(([day, wage]) => day);
 console.log("Full Time Wage Days: ", fullTimeWageDays);
 
-let firstFullTimeWageDay =
-  wages.dailyWages.findIndex(
-    (wage) => wage === FULL_TIME_HOURS * WAGE_PER_HOUR
-  ) + 1;
-console.log("First Full Time Wage Day: Day " + firstFullTimeWageDay);
+let firstFullTimeWageDay = Array.from(dailyWageWithDay.entries()).find(
+  ([day, wage]) => wage === FULL_TIME_HOURS * WAGE_PER_HOUR
+);
+console.log(
+  "First Full Time Wage Day: ",
+  firstFullTimeWageDay ? firstFullTimeWageDay[0] : "None"
+);
 
 let isEveryFullTimeWage = wages.dailyWages.every(
   (wage) => wage === FULL_TIME_HOURS * WAGE_PER_HOUR
