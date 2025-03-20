@@ -140,13 +140,13 @@ let fullWorkingDays = Array.from(dayWiseHourMap.entries())
   .filter(([day, hours]) => hours === FULL_TIME_HOURS)
   .map(([day, hours]) => day);
 
-let partWorkingDays = Array.from(dayWiseHourMap.entries())
-  .filter(([day, hours]) => hours === PART_TIME_HOURS)
-  .map(([day, hours]) => day);
+let partWorkingDaysMap = Array.from(dayWiseHourMap.entries())
+  .filter(([, hours]) => hours === PART_TIME_HOURS)
+  .map(([day]) => day);
 
-let noWorkingDays = Array.from(dayWiseHourMap.entries())
-  .filter(([day, hours]) => hours === 0)
-  .map(([day, hours]) => day);
+let noWorkingDaysMap = Array.from(dayWiseHourMap.entries())
+  .filter(([, hours]) => hours === 0)
+  .map(([day]) => day);
 
 console.log("Full Working Days: ", fullWorkingDays);
 console.log("Part Working Days: ", partWorkingDays);
@@ -164,3 +164,37 @@ wages.dailyWages.forEach((wage, index) => {
 });
 
 console.log("Day Wise Details: ", dayWiseDetails);
+
+// a. Calc total Wage and total hours worked
+let totalWageAndHours = dayWiseDetails.reduce(
+  (acc, dayDetail) => {
+    acc.totalWage += dayDetail.wageEarned;
+    acc.totalHours += dayDetail.hoursWorked;
+    return acc;
+  },
+  { totalWage: 0, totalHours: 0 }
+);
+console.log("Total Wage: $" + totalWageAndHours.totalWage);
+console.log("Total Hours Worked: " + totalWageAndHours.totalHours);
+
+// b. Show the full workings days using foreach
+console.log("Full Working Days:");
+dayWiseDetails.forEach((dayDetail) => {
+  if (dayDetail.hoursWorked === FULL_TIME_HOURS) {
+    console.log(dayDetail.day);
+  }
+});
+
+// c. Show Part working days using Map by reducing to String Array
+let partWorkingDays = dayWiseDetails
+  .map((dayDetail) =>
+    dayDetail.hoursWorked === PART_TIME_HOURS ? dayDetail.day : null
+  )
+  .filter((day) => day !== null);
+console.log("Part Working Days: ", partWorkingDays);
+
+// d. No working days only using Map function
+let noWorkingDays = dayWiseDetails
+  .map((dayDetail) => (dayDetail.hoursWorked === 0 ? dayDetail.day : null))
+  .filter((day) => day !== null);
+console.log("No Working Days: ", noWorkingDays);
