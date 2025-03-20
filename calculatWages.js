@@ -15,6 +15,17 @@ function getWorkingHours(empCheck) {
   }
 }
 
+function calculateMonthlyWage() {
+  let totalWage = 0;
+  const WORKING_DAYS = 20;
+  for (let day = 0; day < WORKING_DAYS; day++) {
+    totalWage += calculateDailyWage();
+  }
+  return totalWage;
+}
+
+console.log("Monthly Wage: $" + calculateMonthlyWage());
+
 function calculateDailyWage() {
   let empCheck = Math.floor(Math.random() * 3);
   let empHours = getWorkingHours(empCheck);
