@@ -110,3 +110,16 @@ console.log("Is there any Part Time Wage: " + isAnyPartTimeWage);
 
 let numberOfDaysWorked = wages.dailyWages.filter((wage) => wage > 0).length;
 console.log("Number of Days Worked: " + numberOfDaysWorked);
+
+let dayWiseWageMap = new Map();
+wages.dailyWages.forEach((wage, index) => {
+  dayWiseWageMap.set(`Day ${index + 1}`, wage);
+});
+
+let totalWageFromMap = Array.from(dayWiseWageMap.values()).reduce(
+  (total, wage) => total + wage,
+  0
+);
+
+console.log("Day Wise Wage Map: ", dayWiseWageMap);
+console.log("Total Wage from Map: $" + totalWageFromMap);
