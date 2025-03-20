@@ -74,5 +74,5 @@ try {
 try {
   const employee = new EmployeePayroll(2, "john", 50000, "Male", new Date());
 } catch (error) {
-  console.error(error.message);
+  console.error(error.message); // Name must start with a capital letter and have at least 3 characters.
 }
