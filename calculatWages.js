@@ -34,3 +34,24 @@ function calculateDailyWage() {
 }
 
 console.log("Daily Wage: $" + calculateDailyWage());
+
+function calculateWagesWithCondition() {
+  let totalEmpHours = 0;
+  let totalWorkingDays = 0;
+  const MAX_HOURS_IN_MONTH = 160;
+  const MAX_WORKING_DAYS = 20;
+
+  while (
+    totalEmpHours <= MAX_HOURS_IN_MONTH &&
+    totalWorkingDays < MAX_WORKING_DAYS
+  ) {
+    totalWorkingDays++;
+    let empCheck = Math.floor(Math.random() * 3);
+    totalEmpHours += getWorkingHours(empCheck);
+  }
+
+  let totalWage = totalEmpHours * WAGE_PER_HOUR;
+  return totalWage;
+}
+
+console.log("Total Wage with Condition: $" + calculateWagesWithCondition());
