@@ -151,3 +151,16 @@ let noWorkingDays = Array.from(dayWiseHourMap.entries())
 console.log("Full Working Days: ", fullWorkingDays);
 console.log("Part Working Days: ", partWorkingDays);
 console.log("No Working Days: ", noWorkingDays);
+let dayWiseDetails = [];
+
+wages.dailyWages.forEach((wage, index) => {
+  let empCheck = Math.floor(Math.random() * 3);
+  let empHours = getWorkingHours(empCheck);
+  dayWiseDetails.push({
+    day: `Day ${index + 1}`,
+    hoursWorked: empHours,
+    wageEarned: wage,
+  });
+});
+
+console.log("Day Wise Details: ", dayWiseDetails);
