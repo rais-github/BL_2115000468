@@ -1,7 +1,7 @@
 class EmployeePayroll {
   constructor(id, name, salary, gender, startDate) {
     this.id = id;
-    this.name = name;
+    this.setName(name); // Use the setter to validate the name
     this.salary = salary;
     this.gender = gender;
     this.startDate = startDate;
@@ -32,6 +32,12 @@ class EmployeePayroll {
   }
 
   setName(name) {
+    const namePattern = /^[A-Z][a-zA-Z]{2,}$/;
+    if (!namePattern.test(name)) {
+      throw new Error(
+        "Name must start with a capital letter and have at least 3 characters."
+      );
+    }
     this.name = name;
   }
 
@@ -48,9 +54,25 @@ class EmployeePayroll {
   }
 }
 
-const employee = new EmployeePayroll(1, "John Doe", 50000, "Male", new Date());
-console.log(employee.getId()); // 1
-console.log(employee.getName()); // John Doe
-console.log(employee.getSalary()); // 50000
-console.log(employee.getGender()); // Male
-console.log(employee.getStartDate()); // Current date
+try {
+  const employee = new EmployeePayroll(
+    1,
+    "John Doe",
+    50000,
+    "Male",
+    new Date()
+  );
+  console.log(employee.getId()); // 1
+  console.log(employee.getName()); // John Doe
+  console.log(employee.getSalary()); // 50000
+  console.log(employee.getGender()); // Male
+  console.log(employee.getStartDate()); // Current date
+} catch (error) {
+  console.error(error.message);
+}
+
+try {
+  const employee = new EmployeePayroll(2, "john", 50000, "Male", new Date());
+} catch (error) {
+  console.error(error.message);
+}
