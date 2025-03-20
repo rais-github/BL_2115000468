@@ -55,3 +55,21 @@ function calculateWagesWithCondition() {
 }
 
 console.log("Total Wage with Condition: $" + calculateWagesWithCondition());
+
+function storeDailyWage() {
+  let dailyWages = [];
+  let totalWage = 0;
+  const WORKING_DAYS = 20;
+
+  for (let day = 0; day < WORKING_DAYS; day++) {
+    let dailyWage = calculateDailyWage();
+    dailyWages.push(dailyWage);
+    totalWage += dailyWage;
+  }
+
+  return { dailyWages, totalWage };
+}
+
+let wages = storeDailyWage();
+console.log("Daily Wages: ", wages.dailyWages);
+console.log("Total Wage: $" + wages.totalWage);
