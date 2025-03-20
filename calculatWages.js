@@ -73,3 +73,40 @@ function storeDailyWage() {
 let wages = storeDailyWage();
 console.log("Daily Wages: ", wages.dailyWages);
 console.log("Total Wage: $" + wages.totalWage);
+
+let totalWageUsingReduce = wages.dailyWages.reduce(
+  (total, wage) => total + wage,
+  0
+);
+console.log("Total Wage using reduce: $" + totalWageUsingReduce);
+
+let dailyWageWithDay = wages.dailyWages.map(
+  (wage, index) => `Day ${index + 1}: $${wage}`
+);
+console.log("Daily Wage with Day: ", dailyWageWithDay);
+
+let fullTimeWageDays = wages.dailyWages
+  .map((wage, index) =>
+    wage === FULL_TIME_HOURS * WAGE_PER_HOUR ? `Day ${index + 1}` : null
+  )
+  .filter((day) => day !== null);
+console.log("Full Time Wage Days: ", fullTimeWageDays);
+
+let firstFullTimeWageDay =
+  wages.dailyWages.findIndex(
+    (wage) => wage === FULL_TIME_HOURS * WAGE_PER_HOUR
+  ) + 1;
+console.log("First Full Time Wage Day: Day " + firstFullTimeWageDay);
+
+let isEveryFullTimeWage = wages.dailyWages.every(
+  (wage) => wage === FULL_TIME_HOURS * WAGE_PER_HOUR
+);
+console.log("Is every wage a Full Time Wage: " + isEveryFullTimeWage);
+
+let isAnyPartTimeWage = wages.dailyWages.some(
+  (wage) => wage === PART_TIME_HOURS * WAGE_PER_HOUR
+);
+console.log("Is there any Part Time Wage: " + isAnyPartTimeWage);
+
+let numberOfDaysWorked = wages.dailyWages.filter((wage) => wage > 0).length;
+console.log("Number of Days Worked: " + numberOfDaysWorked);
