@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F L E X</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+      }
+      header,
+      footer {
+        background: yellowgreen;
+        color: white;
+        text-align: center;
+        padding: 1em;
+      }
+      #main {
+        display: flex;
+        flex: 1;
+      }
+      #main > article {
+        flex: 1;
+        padding: 1em;
+        background: #f4f4f4;
+      }
+      #main > nav,
+      #main > aside {
+        flex: 0 0 20vw;
+        padding: 1em;
+      }
+      #main > nav {
+        background: #d7e8d4;
+      }
+      #main > aside {
+        background: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <div id="main">
+      <article>Article</article>
+      <nav>Nav</nav>
+      <aside>Aside</aside>
+    </div>
+    <footer>Footer</footer>
+  </body>
+</html>
