@@ -113,8 +113,12 @@ let numberOfDaysWorked = wages.dailyWages.filter((wage) => wage > 0).length;
 console.log("Number of Days Worked: " + numberOfDaysWorked);
 
 let dayWiseWageMap = new Map();
+let dayWiseHourMap = new Map();
 wages.dailyWages.forEach((wage, index) => {
+  let empCheck = Math.floor(Math.random() * 3);
+  let empHours = getWorkingHours(empCheck);
   dayWiseWageMap.set(`Day ${index + 1}`, wage);
+  dayWiseHourMap.set(`Day ${index + 1}`, empHours);
 });
 
 let totalWageFromMap = Array.from(dayWiseWageMap.values()).reduce(
@@ -122,5 +126,28 @@ let totalWageFromMap = Array.from(dayWiseWageMap.values()).reduce(
   0
 );
 
+let totalHoursFromMap = Array.from(dayWiseHourMap.values()).reduce(
+  (total, hours) => total + hours,
+  0
+);
+
 console.log("Day Wise Wage Map: ", dayWiseWageMap);
 console.log("Total Wage from Map: $" + totalWageFromMap);
+console.log("Day Wise Hour Map: ", dayWiseHourMap);
+console.log("Total Hours from Map: " + totalHoursFromMap);
+
+let fullWorkingDays = Array.from(dayWiseHourMap.entries())
+  .filter(([day, hours]) => hours === FULL_TIME_HOURS)
+  .map(([day, hours]) => day);
+
+let partWorkingDays = Array.from(dayWiseHourMap.entries())
+  .filter(([day, hours]) => hours === PART_TIME_HOURS)
+  .map(([day, hours]) => day);
+
+let noWorkingDays = Array.from(dayWiseHourMap.entries())
+  .filter(([day, hours]) => hours === 0)
+  .map(([day, hours]) => day);
+
+console.log("Full Working Days: ", fullWorkingDays);
+console.log("Part Working Days: ", partWorkingDays);
+console.log("No Working Days: ", noWorkingDays);
